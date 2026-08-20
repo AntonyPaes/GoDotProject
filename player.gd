@@ -2,10 +2,10 @@ extends CharacterBody2D
 
 # 1. Declare o Sprite E as colisões no topo
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var forma_em_pe: CollisionShape2D = $FormaEmPe
-@onready var forma_no_ar: CollisionShape2D = $FormaNoAr
+# forma_em_pe.set_deferred("disabled", not is_on_floor())
+# forma_no_ar.set_deferred("disabled", is_on_floor())
 
-const SPEED = 300.0
+const SPEED = 200.0
 const JUMP_VELOCITY = -300.0
 
 func _physics_process(delta: float) -> void:
@@ -14,8 +14,8 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta
 
 	# 3. Alterna qual colisão está ativa
-	forma_em_pe.set_deferred("disabled", not is_on_floor())
-	forma_no_ar.set_deferred("disabled", is_on_floor())
+	#forma_em_pe.set_deferred("disabled", not is_on_floor())
+	#forma_no_ar.set_deferred("disabled", is_on_floor())
 
 	# 4. Pulo
 	if Input.is_action_pressed("ui_accept") and is_on_floor():
