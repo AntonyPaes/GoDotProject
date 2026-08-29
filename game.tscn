@@ -913,4 +913,4 @@ tile_set = SubResource("TileSet_0yrln")
 
 [node name="CharacterBody2D2" parent="." unique_id=2133992533 instance=ExtResource("1_80nbo")]
 z_index = 1
-position = Vector2(453, -199)
+position = Vector2(-1019, -22)
