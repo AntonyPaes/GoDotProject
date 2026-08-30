@@ -54,6 +54,13 @@ ui_down={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="terreno"
+2d_physics/layer_2="player"
+2d_physics/layer_3="enemies"
+2d_physics/layer_4="level_end"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://bl3dgjjyvgsbv"]
 
-[ext_resource type="PackedScene" uid="uid://ci7cpdcritjvv" path="res://player.tscn" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://ci7cpdcritjvv" path="res://entities/player.tscn" id="1_80nbo"]
 [ext_resource type="Texture2D" uid="uid://cc4tggjs24mv0" path="res://sprites/Sprite Pack 6/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="2_e2o6t"]
 [ext_resource type="Texture2D" uid="uid://befyhqjdk4f4p" path="res://sprites/Sprite Pack 6/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="2_feb5d"]
 [ext_resource type="Texture2D" uid="uid://dwmceiks3hbwy" path="res://sprites/Sprite Pack 6/Seasonal Tilesets/5 - Misc. universal tiles/Lava_frames (16 x 32).png" id="3_ryrav"]

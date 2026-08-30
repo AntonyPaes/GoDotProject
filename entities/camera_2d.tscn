@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://d4c6ouxl8v7yi"]
 
-[ext_resource type="Script" uid="uid://crpwq01xey8p6" path="res://entities/camera.gd" id="1_k0jm6"]
+[ext_resource type="Script" uid="uid://crpwq01xey8p6" path="res://scripts/camera.gd" id="1_k0jm6"]
 
 [node name="Camera2D" type="Camera2D" unique_id=1659214231]
-position_smoothing_enabled = true
+limit_left = -1300
+limit_top = -400
+limit_right = -300
+limit_bottom = 100
 script = ExtResource("1_k0jm6")
