@@ -1,0 +1,10 @@
+AS DUAS FASES
+1) 1° Fase: É uma fase simples, com alguns pulos e um caminho elevado para que o jogador consiga acessar a fase 2, agora para acessar a fase bônus ele terá que pular em um fundo falso de fácil visualização, escolhi um tema de fácil decoração e pulos por conta do pouco tempo para o desenvolvimento.
+2° Fase: É uma fase também simples, porém em outro tema de bioma, fiz uma quantidade de pulos consideráveis que são obrigatórios, e por conta da alta parede o jogador é obrigado a realizar os pulos, logo após a decida tem a casa com porta aberta que leva o jogador a 1° fase
+2) No FundoDistante usei X: 0.1 Y: 1.0, no FundoMedio usei X: 0.3 Y: 1.0, no FundoProximo usei X: 0.5 Y: 1.0, foi muito no olho na medida que o fundo movimentava mais rápido que a vegetação eu fui configurando manualmente
+3) A área secreta está no final da fase 1, com um buraco falso onde o final da pista não tem colisão e o personagem cai direto e tem acesso passando pela máquina de salgadinho
+4) A câmera usada foi a normal, criado uma entidade separada e sendo usada por referência nas camadas
+5) Professor sendo bem sincero, não entendi a pergunta e assisti a aula, só segui o que foi feito na aula 
+6) O que me travou foi realmente alguns bugs da GoDot, na questão da câmera eu tive bastante dificuldade no ajuste e configuração da primeira vez, porém as próximas foram tranquilas pois sabia exatamente o que poderia ser feito, eu achava que a causa era o posicionamento mas era uma configuração fácil porém não tinha percebido, e também no final na fase bônus, por algum motivo não estava dando certo, revisei algumas vezes e resolvi remover e refazer e acabou dando certo, em algum momento posso ter deixado passar
+
+Peço a sua compreensão professor pois estou sem internet desde sábado atarde e só tenho final de semana para fazer o seu trabalho e TCC por conta do meu trbalaho, por isso fiz um trabalho mais simples e irá continuar assim pois não tenho tempo e também preciso realizar as entregas de TCC que com pouco tempo por conta dos trabalhos de jogos está bem corrido também, obrigado pela compreensão
