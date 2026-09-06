@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://d4c6ouxl8v7yi" path="res://entities/camera_2d.tscn" id="2_y4odb"]
 [ext_resource type="Texture2D" uid="uid://cmp3gl24mhudp" path="res://sprites/Sprite Pack 6/Seasonal Tilesets/5 - Misc. universal tiles/Snack_machine_Bench_Trash_bin (16 x 16).png" id="4_h0d21"]
 [ext_resource type="Texture2D" uid="uid://ckh03m32oj0nv" path="res://sprites/Sprite Pack 6/Seasonal Tilesets/4 - Winter World/Winter_entities (16 x 16).png" id="5_ik1mb"]
+[ext_resource type="PackedScene" uid="uid://elbn6ex8cuh2" path="res://entities/level_end.tscn" id="8_monau"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ik1mb"]
 texture = ExtResource("1_k1xfh")
@@ -470,3 +471,7 @@ limit_left = -297
 limit_top = -311
 limit_right = 298
 limit_bottom = -68
+
+[node name="LevelEnd" parent="." unique_id=102141212 instance=ExtResource("8_monau")]
+position = Vector2(224, -96)
+next_level = "fase1"
