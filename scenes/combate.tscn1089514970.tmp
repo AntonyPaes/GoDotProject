@@ -1,0 +1,76 @@
+[gd_scene format=4 uid="uid://bilwl6v4nols8"]
+
+[ext_resource type="Texture2D" uid="uid://efa5jage3m1s" path="res://sprites/Sprite Pack 6/Seasonal Tilesets/4 - Winter World/Terrain (16 x 16).png" id="1_2t6s8"]
+[ext_resource type="PackedScene" uid="uid://sge6gpagmim3" path="res://entities/jogador.tscn" id="2_nhv6a"]
+[ext_resource type="PackedScene" uid="uid://ekk15wwc7lad" path="res://entities/zumbi_lento.tscn" id="3_nhv6a"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gtb6u"]
+texture = ExtResource("1_2t6s8")
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+11:1/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+11:2/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+15:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+11:4/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+11:5/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+4:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0yrln"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_gtb6u")
+
+[node name="combate" type="Node2D" unique_id=2005669694]
+position = Vector2(1, 1)
+
+[node name="terrain" type="TileMapLayer" parent="." unique_id=1023483992]
+tile_map_data = PackedByteArray("AAD2/wAAAAADAAEAAAD3/wAAAAAEAAEAAAD4/wAAAAAEAAEAAAD5/wAAAAAEAAEAAAD6/wAAAAAEAAEAAAD7/wAAAAAEAAEAAAD8/wAAAAAEAAEAAAD9/wAAAAAEAAEAAAD+/wAAAAAEAAEAAAD//wAAAAAEAAEAAAAAAAAAAAAEAAEAAAABAAAAAAAEAAEAAAACAAAAAAAEAAEAAAADAAAAAAAEAAEAAAAEAAAAAAAEAAEAAAAFAAAAAAAEAAEAAAAGAAAAAAAEAAEAAAAHAAAAAAAEAAEAAAAIAAAAAAAEAAEAAAAJAAAAAAAEAAEAAAAKAAAAAAAEAAEAAAALAAAAAAAEAAEAAAAMAAAAAAAEAAEAAAANAAAAAAAEAAEAAAAOAAAAAAAEAAEAAAAPAAAAAAAEAAEAAAAQAAAAAAAEAAEAAAARAAAAAAAEAAEAAAASAAAAAAAEAAEAAAATAAAAAAAEAAEAAAAUAAAAAAAEAAEAAAAVAAAAAAAEAAEAAAAWAAAAAAAEAAEAAAAXAAAAAAAEAAEAAAAYAAAAAAAEAAEAAAAZAAAAAAAEAAEAAAAaAAAAAAAEAAEAAAAbAAAAAAAEAAEAAAAcAAAAAAAEAAEAAAAdAAAAAAAEAAEAAAAeAAAAAAAEAAEAAAAfAAAAAAAEAAEAAAAgAAAAAAAEAAEAAAAhAAAAAAAEAAEAAAAiAAAAAAAFAAEAAAAiAP3/AAAFAAEAAAAiAP7/AAAFAAEAAAAiAP//AAAFAAEAAAD2//3/AAADAAEAAAD2//7/AAADAAEAAAD2////AAADAAEAAAA=")
+tile_set = SubResource("TileSet_0yrln")
+
+[node name="Jogador" parent="." unique_id=1743355639 instance=ExtResource("2_nhv6a")]
+position = Vector2(400, -32)
+
+[node name="Camera2D" type="Camera2D" parent="Jogador" unique_id=33882224]
+
+[node name="Zumbi" parent="." unique_id=1238314530 instance=ExtResource("3_nhv6a")]
+position = Vector2(-110, -33)
+vida_maxima = 4
+velocidade = 35.0
+dano = 1
+distancia_de_ataque = 60.0
+distancia_de_visao = 130.0
+animacao_de_andar = "walk"
+tempo_entre_ataques = 1.2
+tempo_hurt = 0.25
+quadro_do_golpe = 4

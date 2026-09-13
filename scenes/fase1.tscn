@@ -612,11 +612,11 @@ position = Vector2(279, -75)
 next_level = "fase2"
 
 [node name="LevelEnd2" parent="." unique_id=687920997 instance=ExtResource("10_bdrpm")]
-position = Vector2(356, 131)
+position = Vector2(359, 131)
 next_level = "Bonus"
 
 [node name="Sprite2D" type="Sprite2D" parent="LevelEnd2" unique_id=1022773585]
-position = Vector2(-1, 0)
+position = Vector2(1, -2)
 texture = ExtResource("11_8noer")
 region_enabled = true
 region_rect = Rect2(19.860706, 15.982306, 24.53273, 31.655138)
